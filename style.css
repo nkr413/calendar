@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: black;
+}
+
+* {transition: 0.2s ease-in-out; user-select: none;}
+
+button:focus {outline: none;}
+abbr {text-decoration: none;}
+
+.main-block {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border: 2px solid transparent;
+  padding: 2px;
+  position: relative;
+  top: 20px;
+}
+
+.time-now {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid white;
+  color: white;
+  width: 560px;
+}
+.time-now div {
+  font-size: 20pt;
+  letter-spacing: 1px;
+  padding: 10px;
+  padding-left: 12px;
+}
+.time-now div:hover {padding-left: 25px;}
+
+.main-date-block {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid white;
+  width: 560px;
+  margin-top: -2px;
+}
+
+.week-name {
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.week-name > div {
+  padding: 6px;
+  border: 1.5px solid transparent;
+  border-bottom: 1.5px solid white;
+  background: transparent;
+  color: white;
+  width: 80px;
+  text-align: center;
+  font-size: 18pt;
+  margin-left: -2px;
+  box-shadow: inset 0 45px 0 transparent, inset 0 60px 0 transparent;
+  transition: 0.3s ease-in-out;
+}
+.week-name > div:hover {
+  border-bottom: 1.5px solid transparent;
+  box-shadow: inset 0 0px 0 transparent, inset 0 3px 0 white;
+}
+
+.select-month-year {
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2px;
+}
+
+.select-month-block {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-grow: 1;
+}
+.select-month-block > div:nth-of-type(1) {padding-left: 10px; padding-right: 10px; font-size: 20pt; letter-spacing: 1px; color: white;}
+.select-month-block button {
+  width: 50px;
+  font-size: 20pt;
+  border: 2px solid transparent;
+  background: transparent;
+  color: white;
+  border-radius: 0%;
+}
+.select-month-block button:hover {
+  border: 2px solid white;
+  background: white;
+  color: black;
+  border-radius: 2%;
+}
+
+.select-year-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+.select-year-block > div:nth-of-type(1) {padding-left: 10px; padding-right: 10px; font-size: 20pt; letter-spacing: 1px; color: white;}
+.select-year-block button {
+  width: 50px;
+  font-size: 20pt;
+  border: 2px solid transparent;
+  background: transparent;
+  color: white;
+  border-radius: 0%;
+}
+.select-year-block button:hover {
+  border: 2px solid white;
+  background: white;
+  color: black;
+  border-radius: 2%;
+}
+
+#date-box {
+  width: 560px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#date-box div {
+  width: 66.7px;
+  padding: 6px;
+  background: transparent;
+  color: white;
+  border: 1.5px dashed transparent;
+  border-left: 1.5px solid transparent;
+  text-align: center;
+  font-size: 18pt;
+  margin-left: -2px;
+  margin-top: -3px;
+}
+
+#date-box div:hover {
+  border: 1.5px dashed white;
+}
+
+
+

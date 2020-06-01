@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Calendar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="main-block">
+
+    <div class="time-now">
+      <div>Сейчас</div>
+      <div id="time-now-clock"></div>
+      <div id="time-now-date"></div>
+    </div>
+
+    <div class="main-date-block">
+
+      <div class="select-month-year">
+        <div class="select-month-block">
+          <button id="month-back-btn"><abbr title="Back">&lt;</abbr></button>
+          <div id="month-name"></div>
+          <button id="month-next-btn"><abbr title="Next">&gt;</abbr></button>
+        </div>
+        <div class="select-year-block">
+          <button id="year-back-btn"><abbr title="Back">&lt;</abbr></button>
+          <div id="year-number"></div>
+          <button id="year-next-btn"><abbr title="Next">&gt;</abbr></button>
+        </div>
+      </div>
+
+      <div class="week-name">
+        <div>Пн</div>
+        <div>Вт</div>
+        <div>Ср</div>
+        <div>Чт</div>
+        <div>Пт</div>
+        <div>Сб</div>
+        <div>Вс</div>
+      </div>
+      <div id="date-box"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
