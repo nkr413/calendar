@@ -61,7 +61,7 @@ let data = {
         document.getElementById("month-name").innerHTML == this.month_base[m]) {
       let one = document.querySelectorAll("#date-box > div");
       for (let elem of one) {
-        if (elem.innerHTML == d) elem.style = "border: 1.5px solid white";
+        if (elem.innerHTML == d) elem.style = "border: 1.5px solid #666666";
       }
     }
   }
