@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  background: rgba(27,181,153,1);
+  background: white;
 }
 
 * {transition: 0.2s ease-in-out; user-select: none;}
