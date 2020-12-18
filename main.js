@@ -6,7 +6,9 @@ let data = {
   month_all : month,
   year_all : year,
   day_base : ['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'],
-  month_base : ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'], 
+  month_base : ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+  color_base : ['rgba(27, 181, 153, 1)', 'maroon', 'springgreen', 'rgb(89, 18, 20)', 'rgb(42, 135, 45)', 'rgb(245, 223, 77)', 'rgb(147, 149, 151)', 'rgb(71, 194, 102)', 'rgb(255, 44, 7)'],
+
   start() {
     let time = new Date();
     let day     = time.getDay();
@@ -61,11 +63,12 @@ let data = {
         document.getElementById("month-name").innerHTML == this.month_base[m]) {
       let one = document.querySelectorAll("#date-box > div");
       for (let elem of one) {
-        if (elem.innerHTML == d) elem.style = "border: 1.5px solid #666666";
+        if (elem.innerHTML == d) elem.style = "border: 1.9px solid #666666";
       }
     }
   }
 };
+document.body.style.backgroundColor = data.color_base[Math.floor(Math.random() * data.color_base.length)];
 data.start();
 
 document.getElementById("month-back-btn").addEventListener('click', (e) => {
