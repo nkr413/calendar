@@ -138,4 +138,4 @@ i {font-size: 22pt;}
   margin-top: -3px;
 }
 
-#date-box div:hover {border: 1.5px dashed #666666;}
+#date-box div:hover {background-color: #cccccc;}
